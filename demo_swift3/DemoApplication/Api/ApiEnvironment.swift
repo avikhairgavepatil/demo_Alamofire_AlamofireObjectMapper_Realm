@@ -10,7 +10,7 @@ import Foundation
 
 enum ApiEnvironment: String { case
     
-    production = "http://danielsaidi.com/AlamofireRealmDemo/api/"
+    production = "http://danielsaidi.com/presentation_AlamofireMappableRealm/api/"
 
     var url: String {
         return rawValue
