@@ -2,9 +2,15 @@
 //  ApiRequestAdapter.swift
 //  DemoApplication
 //
-//  Created by Daniel Saidi on 2017-08-23.
-//  Copyright © 2017 Daniel Saidi. All rights reserved.
+//  Created by Daniel Saidi on 2018-12-27.
+//  Copyright © 2018 Daniel Saidi. All rights reserved.
 //
+
+/*
+ 
+ 
+ 
+ */
 
 import Alamofire
 
@@ -14,9 +20,7 @@ class ApiRequestAdapter: RequestAdapter {
         self.context = context
     }
     
-    
-    fileprivate let context: ApiContext
-    
+    private let context: ApiContext
     
     func adapt(_ request: URLRequest) throws -> URLRequest {
         guard let token = context.authToken else { return request }

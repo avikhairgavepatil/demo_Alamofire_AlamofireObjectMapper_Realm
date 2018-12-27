@@ -35,7 +35,7 @@
 		45BE53BE1F4CEB6D007E40D3 /* IoC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE53BC1F4CEB6D007E40D3 /* IoC.swift */; };
 		45BE53BF1F4CEB6D007E40D3 /* IoCContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE53BD1F4CEB6D007E40D3 /* IoCContainer.swift */; };
 		45BE53C11F4CEB8B007E40D3 /* DipContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE53C01F4CEB8B007E40D3 /* DipContainer.swift */; };
-		45BE53C31F4CEBE0007E40D3 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE53C21F4CEBE0007E40D3 /* DependencyManager.swift */; };
+		45BE53C31F4CEBE0007E40D3 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE53C21F4CEBE0007E40D3 /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +68,7 @@
 		45BE53BC1F4CEB6D007E40D3 /* IoC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoC.swift; sourceTree = "<group>"; };
 		45BE53BD1F4CEB6D007E40D3 /* IoCContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IoCContainer.swift; sourceTree = "<group>"; };
 		45BE53C01F4CEB8B007E40D3 /* DipContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DipContainer.swift; sourceTree = "<group>"; };
-		45BE53C21F4CEBE0007E40D3 /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		45BE53C21F4CEBE0007E40D3 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		51EF595D5BB65F11C3D871A7 /* Pods-DemoApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApplication/Pods-DemoApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		D90F5A35832A0AF29E060149 /* Pods_DemoApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F2D478E61277B095511B24 /* Pods-DemoApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApplication/Pods-DemoApplication.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 		45BE53BB1F4CEB6D007E40D3 /* IoC */ = {
 			isa = PBXGroup;
 			children = (
-				45BE53C21F4CEBE0007E40D3 /* DependencyManager.swift */,
+				45BE53C21F4CEBE0007E40D3 /* Dependencies.swift */,
 				45BE53C01F4CEB8B007E40D3 /* DipContainer.swift */,
 				45BE53BC1F4CEB6D007E40D3 /* IoC.swift */,
 				45BE53BD1F4CEB6D007E40D3 /* IoCContainer.swift */,
@@ -378,7 +378,7 @@
 			files = (
 				4584F4231F49EF5B0025CFDD /* MovieService.swift in Sources */,
 				45BE53A91F4C5206007E40D3 /* DateTransform_Custom.swift in Sources */,
-				45BE53C31F4CEBE0007E40D3 /* DependencyManager.swift in Sources */,
+				45BE53C31F4CEBE0007E40D3 /* Dependencies.swift in Sources */,
 				45BE53BF1F4CEB6D007E40D3 /* IoCContainer.swift in Sources */,
 				45BE53B81F4CD3BF007E40D3 /* ApiRequestRetrier.swift in Sources */,
 				4584F4081F49DB550025CFDD /* ViewController.swift in Sources */,

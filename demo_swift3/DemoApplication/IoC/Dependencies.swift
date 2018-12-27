@@ -2,16 +2,16 @@
 //  DependencyManager.swift
 //  DemoApplication
 //
-//  Created by Saidi Daniel (BookBeat) on 2017-08-23.
+//  Created by Daniel Saidi on 2017-08-23.
 //  Copyright © 2017 Daniel Saidi. All rights reserved.
 //
 
 import Dip
 import Alamofire
 
-class DependencyManager: NSObject {
+class Dependencies: NSObject {
     
-    static func registerDependencies() {
+    static func register() {
         let dip = DependencyContainer()
         registerApi(dip)
         let container = DipContainer(container: dip)
@@ -20,7 +20,7 @@ class DependencyManager: NSObject {
     }
     
     
-    fileprivate static func registerApi(_ dip: DependencyContainer) {
+    private static func registerApi(_ dip: DependencyContainer) {
         dip.register(.singleton) {
             NonPersistentApiContext(environment: .production) as ApiContext
         }
@@ -34,7 +34,7 @@ class DependencyManager: NSObject {
         }
     }
     
-    fileprivate static func setupApi() {
+    private static func setupApi() {
         let manager = SessionManager.default
         manager.adapter = ApiRequestAdapter(context: IoC.resolve())
         manager.retrier = ApiRequestRetrier(context: IoC.resolve(), authService: IoC.resolve())
