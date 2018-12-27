@@ -12,7 +12,7 @@ extension Dependencies {
     
     static func registerAuth(with dip: DependencyContainer) {
         dip.register {
-            AlamofireAuthService(context: $0) as AuthService
+            ApiAuthService(context: $0) as AuthService
         }
     }
 }

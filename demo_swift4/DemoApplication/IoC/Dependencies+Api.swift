@@ -22,14 +22,6 @@ extension Dependencies {
         dip.register(.singleton) {
             NonPersistentApiContext(environment: .production) as ApiContext
         }
-        
-        dip.register {
-            AlamofireAuthService(context: $0) as AuthService
-        }
-        
-        dip.register {
-            AlamofireMovieService(context: $0) as MovieService
-        }
     }
     
     static func setupApi() {

@@ -30,9 +30,10 @@ class AlamofireService {
         return request(at: route, method: .put, encoding: JSONEncoding.default)
     }
     
-    func request(at route: ApiRoute, method: HTTPMethod, encoding: ParameterEncoding) -> DataRequest {
+    func request(at route: ApiRoute, method: HTTPMethod, params: Parameters = [:], encoding: ParameterEncoding) -> DataRequest {
         let url = route.url(for: context.environment)
-        let params = route.params
-        return Alamofire.request(url, method: method, parameters: params, encoding: encoding).validate()
+        return Alamofire
+            .request(url, method: method, parameters: params, encoding: encoding)
+            .validate()
     }
 }

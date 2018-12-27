@@ -16,7 +16,7 @@
 
 import Foundation
 
-struct NonPersistentApiContext: ApiContext {
+class NonPersistentApiContext: ApiContext {
     
     init(environment: ApiEnvironment) {
         self.environment = environment

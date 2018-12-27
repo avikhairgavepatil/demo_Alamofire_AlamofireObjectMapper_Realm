@@ -13,7 +13,7 @@
  
  */
 
-import Alamofire
+import Foundation
 
 enum ApiRoute { case
     
@@ -29,10 +29,6 @@ enum ApiRoute { case
         case .topGrossingMovies(let year): return "movies/topGrossing/\(year)"
         case .topRatedMovies(let year): return "movies/topRated/\(year)"
         }
-    }
-    
-    var params: Parameters? {
-        return nil
     }
     
     func url(for environment: ApiEnvironment) -> String {

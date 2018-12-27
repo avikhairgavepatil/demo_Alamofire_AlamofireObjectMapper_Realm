@@ -10,7 +10,6 @@ import Foundation
 
 typealias AuthResult = (_ token: String?, _ error: Error?) -> ()
 
-
 protocol AuthService: class {
     
     func authorize(completion: @escaping AuthResult)

@@ -9,15 +9,14 @@
 import Alamofire
 import AlamofireObjectMapper
 
-class AlamofireAuthService: AlamofireService, AuthService {
+class ApiAuthService: AlamofireService, AuthService {
     
     func authorize(completion: @escaping AuthResult) {
-        get(at: .auth).responseString {
-            (res: DataResponse<String>) in
-            if let token = res.result.value {
+        get(at: .auth).responseString { (response: DataResponse<String>) in
+            if let token = response.result.value {
                 self.context.authToken = token
             }
-            completion(res.result.value, res.result.error)
+            completion(response.result.value, response.result.error)
         }
     }
 }

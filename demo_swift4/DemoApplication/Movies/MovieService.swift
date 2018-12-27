@@ -11,7 +11,6 @@ import Foundation
 typealias MovieResult = (_ movie: Movie?, _ error: Error?) -> ()
 typealias MoviesResult = (_ movies: [Movie], _ error: Error?) -> ()
 
-
 protocol MovieService: class {
     
     func getMovie(id: Int, completion: @escaping MovieResult)
