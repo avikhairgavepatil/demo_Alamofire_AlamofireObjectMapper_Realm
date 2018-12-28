@@ -35,6 +35,9 @@
 		849F068021D53CC90074C6E4 /* Dependencies+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F067F21D53CC90074C6E4 /* Dependencies+Api.swift */; };
 		849F068221D53D720074C6E4 /* Dependencies+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F068121D53D720074C6E4 /* Dependencies+Auth.swift */; };
 		849F068421D53D7F0074C6E4 /* Dependencies+Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F068321D53D7F0074C6E4 /* Dependencies+Movies.swift */; };
+		849F068A21D6B5E30074C6E4 /* RealmMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F068921D6B5E30074C6E4 /* RealmMovie.swift */; };
+		849F068C21D6B6650074C6E4 /* RealmMovieActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F068B21D6B6650074C6E4 /* RealmMovieActor.swift */; };
+		849F068E21D6B80E0074C6E4 /* RealmMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F068D21D6B80E0074C6E4 /* RealmMovieService.swift */; };
 		D87995B0D71E4A34BAA9F57E /* Pods_DemoApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE97CAD88CE0A6337FCED7D3 /* Pods_DemoApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		849F067F21D53CC90074C6E4 /* Dependencies+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependencies+Api.swift"; sourceTree = "<group>"; };
 		849F068121D53D720074C6E4 /* Dependencies+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependencies+Auth.swift"; sourceTree = "<group>"; };
 		849F068321D53D7F0074C6E4 /* Dependencies+Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependencies+Movies.swift"; sourceTree = "<group>"; };
+		849F068921D6B5E30074C6E4 /* RealmMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMovie.swift; sourceTree = "<group>"; };
+		849F068B21D6B6650074C6E4 /* RealmMovieActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMovieActor.swift; sourceTree = "<group>"; };
+		849F068D21D6B80E0074C6E4 /* RealmMovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMovieService.swift; sourceTree = "<group>"; };
 		9BE0ED3BEA1983FA3D142893 /* Pods-DemoApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApplication/Pods-DemoApplication.release.xcconfig"; sourceTree = "<group>"; };
 		BE97CAD88CE0A6337FCED7D3 /* Pods_DemoApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +134,7 @@
 				849F065C21D51D490074C6E4 /* Auth */,
 				849F065321D51C8C0074C6E4 /* Movies */,
 				849F064A21D517DC0074C6E4 /* IoC */,
+				849F068821D6B5E30074C6E4 /* Realm */,
 				849F063821D515E50074C6E4 /* AppDelegate.swift */,
 				849F063A21D515E50074C6E4 /* ViewController.swift */,
 				849F063C21D515E50074C6E4 /* Main.storyboard */,
@@ -227,6 +234,16 @@
 				849F067D21D53C090074C6E4 /* ApiMovieService.swift */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		849F068821D6B5E30074C6E4 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				849F068921D6B5E30074C6E4 /* RealmMovie.swift */,
+				849F068B21D6B6650074C6E4 /* RealmMovieActor.swift */,
+				849F068D21D6B80E0074C6E4 /* RealmMovieService.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +350,8 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -342,6 +361,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,6 +380,7 @@
 				849F065621D51CAC0074C6E4 /* Movie.swift in Sources */,
 				849F066E21D5318E0074C6E4 /* ApiRequestRetrier.swift in Sources */,
 				849F066521D52F2F0074C6E4 /* ApiContext.swift in Sources */,
+				849F068E21D6B80E0074C6E4 /* RealmMovieService.swift in Sources */,
 				849F064F21D517FF0074C6E4 /* IoC.swift in Sources */,
 				849F066B21D531450074C6E4 /* ApiRoute.swift in Sources */,
 				849F068221D53D720074C6E4 /* Dependencies+Auth.swift in Sources */,
@@ -378,7 +400,9 @@
 				849F067021D534870074C6E4 /* ApiRequestAdapter.swift in Sources */,
 				849F067E21D53C090074C6E4 /* ApiMovieService.swift in Sources */,
 				849F065021D517FF0074C6E4 /* IoCContainer.swift in Sources */,
+				849F068C21D6B6650074C6E4 /* RealmMovieActor.swift in Sources */,
 				849F065221D517FF0074C6E4 /* DipContainer.swift in Sources */,
+				849F068A21D6B5E30074C6E4 /* RealmMovie.swift in Sources */,
 				849F068021D53CC90074C6E4 /* Dependencies+Api.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

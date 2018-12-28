@@ -12,7 +12,9 @@ extension Dependencies {
     
     static func registerMovies(with dip: DependencyContainer) {
         dip.register {
-            AlamofireMovieService(context: $0) as MovieService
+            RealmMovieService(
+                baseService: AlamofireMovieService(context: $0)
+            ) as MovieService
         }
     }
 }

@@ -108,14 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				4584F4241F4A42D20025CFDD /* Api */,
+				4584F4171F49DD460025CFDD /* Domain */,
+				45BE53BB1F4CEB6D007E40D3 /* IoC */,
+				45BE53AA1F4C5803007E40D3 /* Realm */,
 				4584F4051F49DB550025CFDD /* AppDelegate.swift */,
 				4584F40C1F49DB550025CFDD /* Assets.xcassets */,
-				4584F4171F49DD460025CFDD /* Domain */,
 				4584F4111F49DB550025CFDD /* Info.plist */,
-				45BE53BB1F4CEB6D007E40D3 /* IoC */,
 				4584F40E1F49DB550025CFDD /* LaunchScreen.storyboard */,
 				4584F4091F49DB550025CFDD /* Main.storyboard */,
-				45BE53AA1F4C5803007E40D3 /* Realm */,
 				4584F4071F49DB550025CFDD /* ViewController.swift */,
 			);
 			path = DemoApplication;
@@ -151,14 +151,14 @@
 		4584F4241F4A42D20025CFDD /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				45BE53A71F4C51FD007E40D3 /* Extensions */,
+				4584F42B1F4A47400025CFDD /* ApiEnvironment.swift */,
+				45BE53B91F4CE5FF007E40D3 /* ApiRequestAdapter.swift */,
+				45BE53B71F4CD3BF007E40D3 /* ApiRequestRetrier.swift */,
+				4584F42D1F4A47AC0025CFDD /* ApiRoute.swift */,
 				4584F42F1F4A4E1A0025CFDD /* Context */,
+				45BE53A71F4C51FD007E40D3 /* Extensions */,
 				4584F4251F4A42D20025CFDD /* Model */,
 				4584F4261F4A42D20025CFDD /* Services */,
-				4584F42B1F4A47400025CFDD /* ApiEnvironment.swift */,
-				4584F42D1F4A47AC0025CFDD /* ApiRoute.swift */,
-				45BE53B71F4CD3BF007E40D3 /* ApiRequestRetrier.swift */,
-				45BE53B91F4CE5FF007E40D3 /* ApiRequestAdapter.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
